@@ -3,9 +3,12 @@ import { productClass } from '../controllers/product.Controller';
 
 const productRouter = express.Router();
 
-productRouter.post('/index', productClass.indexProduct);
+/* The code is defining various routes for handling HTTP requests related to products. */
+productRouter.post('/create', productClass.createProduct);
+productRouter.post('/bulkInsert', productClass.insertBulkProducts);
 productRouter.get('/search', productClass.searchProducts);
-productRouter.get('/getProduct/:id', productClass.getProductById);
+productRouter.get('/getElasticProduct/:id', productClass.getElasticProduct); 
+productRouter.get('/getMongoProduct/:id', productClass.getMongoProduct);  
 productRouter.put('/update/:id', productClass.updateProduct);
 productRouter.delete('/delete/:id', productClass.deleteProduct);
 

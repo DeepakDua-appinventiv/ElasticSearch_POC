@@ -1,1 +1,1 @@
-Ellastic Search POC
+Elastic Search POC

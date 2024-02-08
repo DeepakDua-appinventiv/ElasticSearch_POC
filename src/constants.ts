@@ -1,8 +1,9 @@
 export const SUCCESS_MESSAGES = {
-    INDEX_SUCCESS: 'Product indexed successfully',
-    SEARCH_SUCCESS: 'Products retrieved successfully',
-    UPDATE_SUCCESS: 'Product updated successfully',
-    DELETE_SUUCESS: 'Product deleted successfully',
+    INDEX_SUCCESS: 'indexed successfully',
+    BULK_SUCCESS: 'bulk indexing successful',
+    SEARCH_SUCCESS: 'retrieved successfully',
+    UPDATE_SUCCESS: 'updated successfully',
+    DELETE_SUUCESS: 'deleted successfully',
 }
 
 export const ERROR_MESSAGES = {
