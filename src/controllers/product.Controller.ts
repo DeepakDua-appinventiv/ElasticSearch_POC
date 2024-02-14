@@ -10,7 +10,6 @@ static async createProduct(req: Request, res: Response) {
     const { body } = req;
     const response = await productServiceClass.createProduct(body);
     res.status(RESPONSE_STATUS.success).json({ message: SUCCESS_MESSAGES.INDEX_SUCCESS, data: response });
-    res.json(response);
   } catch (error) {
     res.status(RESPONSE_STATUS.internalServerError).json({ error: error.message });
   }
